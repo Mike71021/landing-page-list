@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page list</title>
+
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgba(13, 109, 253, 0.389);
+            color: #4b4b4b;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #4b4b4b48;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <section class="container-fluid border-bottom px-0">
+        <h1 class="text-center mt-3">Landing pages list</h1>
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#fr">FR 🇫🇷</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#en">EN 🇺🇸</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#de">DE 🇩🇪</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#es">ES 🇪🇸</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#devu">DevU
+                                <img src="https://uploads-ssl.webflow.com/6352499c442843ffb17c5a77/6357cd20e47c40388f137e90_DEVUNIVERSITY_WEBCLIC_256_256.png"
+                                    alt="favicon-devu" height="16px" /></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#cyber">Cyber
+                                <img src="https://uploads-ssl.webflow.com/600ff03cb344e74d20dfd087/647777e7ac180c8336841046_apple-touch-icon.png"
+                                    alt="favicon-cyber" height="16px" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="container-fluid mt-5" id="fr">
+        <div class="container">
+            <h2>FR 🇫🇷 :</h2>
+            <div class="text-secondary fst-italic">
+                Nom de domaine : formation.datascientest.com/
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Génerale :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/nos-formations-data" target="_blank">
+                            Nos formations Data
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/nos-formations" target="_blank">
+                            Nos formations
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/nos-formations-ile-de-france" target="_blank">
+                            Nos formations Ile De France
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/nos-formations-event" target="_blank">
+                            Nos formations Event
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/nos-formations-data-science" target="_blank">
+                            Nos formations Data Science
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Formation métier :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/data-analyst-landing-page" target="_blank">
+                            Data Analyst V.1
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/data-analyst" target="_blank">
+                            Data Analyst V.2
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/metier-data-analyst" target="_blank">
+                            Data Analyst V.3
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/data-scientist-landing-page" target="_blank">
+                            Data Scientist V.1
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/data-scientist" target="_blank">
+                            Data Scientist V.2
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/metier-data-scientist" target="_blank">
+                            Data Scientist V.3
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/data-engineer-landing-page" target="_blank">
+                            Data Engineer V.1
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/metier-data-engineer" target="_blank">
+                            Data Engineer V.3
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/data-product-manager-landing-page" target="_blank">
+                            Data Product Manager V.1
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/metier-data-product-manager" target="_blank">
+                            Data Product Manager V.3
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/data-management-landing-page" target="_blank">
+                            Data Management V.1
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/machine-learning-engineer-landing-page"
+                            target="_blank">
+                            Machine Learning Engineer V.1
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/metier-machine-learning-engineer" target="_blank">
+                            Machine Learning Engineer V.3
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/devops-landing-page" target="_blank">
+                            Devops
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Cursus Expert & Certification :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/deep-learning-landing-page" target="_blank">
+                            Deep learning
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/power-bi-landing-page" target="_blank">
+                            Power BI V.1
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/power-bi-landing-page-aff" target="_blank">
+                            Power BI V.1 AFF
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/power-bi" target="_blank">
+                            Power BI V.2
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/power-bi-aff" target="_blank">
+                            Power BI V.2 AFF
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/power-bi-pl300" target="_blank">
+                            Power BI V.3
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/power-bi-pl300-aff" target="_blank">
+                            Power BI V.3 AFF
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/aws-solutions-architect-landing-page"
+                            target="_blank">
+                            AWS Solutions Architect
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/formation-azure-landing-page" target="_blank">
+                            Azure
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/formation-azure-az-104-landing-page"
+                            target="_blank">
+                            Azure AZ-104
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/formation-azure-dp-203-landing-page"
+                            target="_blank">
+                            Azure DP-203
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/formation-excel-landing-page" target="_blank">
+                            Excel
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Page RDV :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/landing-page" target="_blank">
+                            Landing page
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/landing-page-rdv" target="_blank">
+                            Landing page RDV
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/landing-page-rdv-devops" target="_blank">
+                            Landing page RDV Devops
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/landing-page-calendly" target="_blank">
+                            Landing page Calendly
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/landing-page-poei" target="_blank">
+                            Landing page POEI
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/landing-page-analyst" target="_blank">
+                            Landing page Analyst
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Other :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/business-for-it-landing-page" target="_blank">
+                            Business for IT
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/ebook-power-bi" target="_blank">
+                            Ebook power bi
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/inscription-discovery-day-aws" target="_blank">
+                            Inscription discovery day AWS
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/offre-alternance" target="_blank">
+                            Offre Alternance
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid mt-5" id="en">
+        <hr />
+        <div class="container">
+            <h2>EN 🇺🇸 :</h2>
+            <div class="text-secondary fst-italic">
+                Nom de domaine : courses.datascientest.com/
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Canada 🇨🇦 :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/our-courses-canada" target="_blank">
+                            Our courses
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/landing-page-canada" target="_blank">
+                            Landing page
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/landing-page-calendly-canada" target="_blank">
+                            Landing page calendly
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Allemagne 🇩🇪 :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/our-courses-de" target="_blank">
+                            Our Courses
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/data-analyst-landing-page-de" target="_blank">
+                            Data Analyst
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/data-analyst-landing-page-de-lp" target="_blank">
+                            Data Analyst Old
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/data-scientist-landing-page-de" target="_blank">
+                            Data Scientist
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/data-scientist-landing-page-de-lp" target="_blank">
+                            Data Scientist Old
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/data-engineer-landing-page-de" target="_blank">
+                            Data Engineer
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Espagne 🇪🇸 :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/data-analyst-landing-page-es" target="_blank">
+                            Data Analyst
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/data-analyst-landing-page-de-lp" target="_blank">
+                            Data Analyst Old
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/data-scientist-landing-page-es" target="_blank">
+                            Data Scientist
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/data-scientist-landing-page-es-lp" target="_blank">
+                            Data Scientist Old
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Page RDV :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/landing-page" target="_blank">
+                            Landing page
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/landing-page-appointment" target="_blank">
+                            Landing page RDV
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/landing-page-calendly" target="_blank">
+                            Landing page Calendly
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Old :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/our-courses" target="_blank">
+                            Our Courses
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/data-analyst-landing-page" target="_blank">
+                            Data Analyst
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/data-scientist-landing-page" target="_blank">
+                            Data Scientist
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://courses.datascientest.com/data-engineer-landing-page" target="_blank">
+                            Data Engineer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid mt-5" id="de">
+        <hr />
+        <div class="container">
+            <h2>DE 🇩🇪 :</h2>
+            <div class="text-secondary fst-italic">
+                Nom de domaine : weiterbildung.datascientest.com/
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Formation métier :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://weiterbildung.datascientest.com/unsere-weiterbildungen" target="_blank">
+                            Unsere Weiterbildungen
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://weiterbildung.datascientest.com/data-analyst-landing-page" target="_blank">
+                            Data Analyst
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://weiterbildung.datascientest.com/data-scientist-landing-page" target="_blank">
+                            Data Scientist
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://weiterbildung.datascientest.com/data-engineer-landing-page" target="_blank">
+                            Data Engineer
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 ms-3">
+                <h3>Page RDV :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://weiterbildung.datascientest.com/landing-page" target="_blank">
+                            Landing page
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://weiterbildung.datascientest.com/landing-page-calendly" target="_blank">
+                            Landing page Calendly
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Old :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://weiterbildung.datascientest.com/unsere-weiterbildungen-lp" target="_blank">
+                            Unsere Weiterbildungen
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://weiterbildung.datascientest.com/data-analyst-landing-page-lp" target="_blank">
+                            Data Analyst
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://weiterbildung.datascientest.com/data-scientist-landing-page-lp"
+                            target="_blank">
+                            Data Scientist
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://weiterbildung.datascientest.com/data-engineer-landing-page-lp" target="_blank">
+                            Data Engineer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid mt-5" id="es">
+        <hr />
+        <div class="container">
+            <h2>ES 🇪🇸 :</h2>
+            <div class="text-secondary fst-italic">
+                Nom de domaine : cursos.datascientest.com/
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Formation métier :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://cursos.datascientest.com/data-analyst-landing-page" target="_blank">
+                            Data Analyst
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://cursos.datascientest.com/data-scientist-landing-page" target="_blank">
+                            Data Scientist
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 ms-3">
+                <h3>Page RDV :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://cursos.datascientest.com/landing-page" target="_blank">
+                            Landing page
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://cursos.datascientest.com/landing-page-calendly" target="_blank">
+                            Landing page Calendly
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Old :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://cursos.datascientest.com/nuestros-cursos" target="_blank">
+                            Nuestros cursos
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://cursos.datascientest.com/data-analyst-landing-page-lp" target="_blank">
+                            Data Analyst
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://cursos.datascientest.com/data-scientist-landing-page-lp" target="_blank">
+                            Data Scientist
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://cursos.datascientest.com/data-engineer-landing-page" target="_blank">
+                            Data Engineer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid mt-5" id="devu">
+        <hr />
+        <div class="container">
+            <h2>
+                DevUniversity
+                <img src="https://uploads-ssl.webflow.com/6352499c442843ffb17c5a77/6357cd20e47c40388f137e90_DEVUNIVERSITY_WEBCLIC_256_256.png"
+                    alt="favicon-devu" height="30px" /> :
+            </h2>
+            <div class="text-secondary fst-italic">
+                Nom de domaine : https://formation.devuniversity.com/
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Formation métier :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.devuniversity.com/formation-devops" target="_blank">
+                            Formation DevOps
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.devuniversity.com/formation-devops-alternance" target="_blank">
+                            Formation Devops Alternance
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Page RDV :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.devuniversity.com/landing-page" target="_blank">
+                            Landing page
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.devuniversity.com/landing-page-alternance" target="_blank">
+                            Landing page Alternance
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.devuniversity.com/landing-page-calendly" target="_blank">
+                            Landing page Calendly
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid my-5 pb-5" id="cyber">
+        <hr />
+        <div class="container">
+            <h2>
+                CyberUniversity  <img
+                    src="https://uploads-ssl.webflow.com/600ff03cb344e74d20dfd087/647777e7ac180c8336841046_apple-touch-icon.png"
+                    alt="favicon-cyber" height="30px" /> :
+            </h2>
+            <div class="text-secondary fst-italic">
+                Nom de domaine : https://formation.cyberuniversity.com/
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Formation métier :</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.cyberuniversity.com/cybersecurity-analyst" target="_blank">
+                            Analyste en cybersécurité
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 ms-3">
+                <h3>Page RDV : (page a créer)</h3>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.cyberuniversity.com/landing-page" target="_blank">
+                            Landing page
+                        </a>
+                    </div>
+                    <div class="w-auto">
+                        <a href="https://formation.cyberuniversity.com/landing-page-calendly" target="_blank">
+                            Landing page Calendly
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light py-3">
+        <div class="container text-end">
+            © 2023 DataScientest —&nbsp;Tous&nbsp;droits&nbsp;réservés.
+        </div>
+    </section>
+</body>
+
+</html>
