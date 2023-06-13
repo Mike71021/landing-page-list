@@ -7,58 +7,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page list</title>
+    <title>LPs list</title>
 
-    <style>
-        #myBtn {
-            display: none;
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 99;
-            font-size: 18px;
-            border: none;
-            outline: none;
-            background-color: rgba(13, 109, 253, 0.389);
-            color: #4b4b4b;
-            cursor: pointer;
-            border-radius: 4px;
-        }
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#6891ff">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
 
-        #myBtn:hover {
-            background-color: #4b4b4b48;
-        }
-    </style>
+    <link href="index.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
-    <script>
-        // Get the button
-        let mybutton = document.getElementById("myBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-            scrollFunction();
-        };
-
-        function scrollFunction() {
-            if (
-                document.body.scrollTop > 20 ||
-                document.documentElement.scrollTop > 20
-            ) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
 
     <section class="container-fluid border-bottom px-0">
         <h1 class="text-center mt-3">Landing pages list</h1>
@@ -213,7 +178,14 @@
                 <div class="row mt-3 mx-0">
                     <div class="w-auto">
                         <a href="https://formation.datascientest.com/devops-landing-page" target="_blank">
-                            Devops
+                            Devops V.1
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3 mx-0">
+                    <div class="w-auto">
+                        <a href="https://formation.datascientest.com/data-marketing-landing-page" target="_blank">
+                            Data Marketing V.1
                         </a>
                     </div>
                 </div>
@@ -724,6 +696,34 @@
             © 2023 DataScientest —&nbsp;Tous&nbsp;droits&nbsp;réservés.
         </div>
     </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>
